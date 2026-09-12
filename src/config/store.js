@@ -1,8 +1,9 @@
 // ==========================================================================
 // CONFIGURAÇÃO DA LOJA — PHL COLLECTION
-// Altere aqui o link do grupo de WhatsApp, Instagram, frases e textos
-// institucionais. Nenhum outro arquivo do projeto deve conter o link do
-// grupo diretamente — todos os botões usam getWhatsAppGroupLink().
+// Altere aqui o link do grupo de WhatsApp, do vendedor, Instagram, frases e
+// textos institucionais. Nenhum outro arquivo do projeto deve conter esses
+// links diretamente — os botões usam getWhatsAppGroupLink() (grupo) ou
+// getSellerWhatsAppLink() (compra direta com o vendedor).
 // ==========================================================================
 
 const storeConfig = {
@@ -10,13 +11,15 @@ const storeConfig = {
   legalNote: "PHL Collection. Todos os direitos reservados.",
   slogan: "Grandes marcas. Estilo único.",
 
-  // Canal oficial e único de contato/compra da loja.
+  // Canal oficial do grupo/comunidade da loja.
   whatsappGroup: "https://chat.whatsapp.com/LKiAvRsq6QWFQIvOD5cIeV",
+  // Canal privado do vendedor, usado exclusivamente pelos botões de compra.
+  sellerWhatsapp: "https://w.app/jzw9cm",
   instagram: "@phlcollection",
   instagramUrl: "https://instagram.com/phlcollection",
 
   // Rótulos padrão usados nos botões de compra/contato em todo o site.
-  buyButtonLabel: "COMPRAR PELO GRUPO",
+  buyButtonLabel: "COMPRAR COM O VENDEDOR",
   soldOutLabel: "ESGOTADO",
   groupCtaLabel: "ENTRAR NO GRUPO",
 

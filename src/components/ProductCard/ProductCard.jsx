@@ -1,7 +1,7 @@
 import ProductImage from "../ProductImage/ProductImage";
 import storeConfig from "../../config/store";
 import { formatPrice } from "../../utils/format";
-import { getWhatsAppGroupLink } from "../../utils/whatsapp";
+import { getSellerWhatsAppLink } from "../../utils/whatsapp";
 
 export default function ProductCard({ product }) {
   const { name, brand, description, price, available, image, secondImage } = product;
@@ -46,10 +46,10 @@ export default function ProductCard({ product }) {
 
         {available ? (
           <a
-            href={getWhatsAppGroupLink()}
+            href={getSellerWhatsAppLink()}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Comprar ${name} — entrar no grupo da PHL Collection`}
+            aria-label={`Comprar ${name} — falar com o vendedor no WhatsApp`}
             className="mt-4 inline-flex items-center justify-center border border-navy py-3 font-sans text-[11px] font-semibold tracking-[0.2em] text-navy transition-colors duration-300 hover:bg-navy hover:text-cream"
           >
             {storeConfig.buyButtonLabel}
